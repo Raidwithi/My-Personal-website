@@ -1,0 +1,653 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bio Data - Dwithi N Rai</title>
+
+<style>
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf0f8;
+    color: #263238;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 40px 45px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+}
+
+/* MAIN HEADING */
+
+h1 {
+    text-align: center;
+    color: #173b70;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #2563eb;
+}
+
+/* TOP SECTION */
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.details {
+    flex: 1;
+}
+
+/* PERSONAL DETAILS */
+
+.detail-row {
+    display: flex;
+    margin-bottom: 13px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.detail-row strong {
+    width: 165px;
+    flex-shrink: 0;
+    color: #173b70;
+}
+
+.detail-row span {
+    flex: 1;
+}
+
+/* PHOTO SECTION */
+
+.photo-container {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.photo-box {
+    width: 145px;
+    height: 175px;
+    border: 3px solid #2563eb;
+    border-radius: 9px;
+    overflow: hidden;
+    background: #f1f5f9;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+.photo-caption {
+    font-size: 11px;
+    color: #555;
+    margin-top: 7px;
+}
+
+/* PHOTO BUTTONS */
+
+.photo-upload {
+    margin-top: 10px;
+}
+
+.photo-upload input {
+    width: 145px;
+    font-size: 11px;
+}
+
+.photo-upload button {
+    background: #64748b;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+/* SECTION HEADINGS */
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 9px 12px;
+    color: #173b70;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: #eaf2ff;
+    border-left: 5px solid #2563eb;
+    border-radius: 4px;
+}
+
+/* EDUCATION TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+    font-size: 13px;
+}
+
+th {
+    background: #173b70;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f1f5fb;
+}
+
+tr:hover {
+    background: #eaf2ff;
+}
+
+/* EXPERIENCE */
+
+.experience {
+    font-size: 14px;
+    padding: 12px 15px;
+    background: #f8fafc;
+    border-left: 4px solid #2563eb;
+}
+
+/* ADDRESS */
+
+.address {
+    line-height: 2;
+    font-size: 14px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 5px;
+    border-left: 4px solid #2563eb;
+}
+
+/* SIGNATURE SECTION */
+
+.signature-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+    font-size: 14px;
+}
+
+.signature {
+    text-align: right;
+}
+
+.signature p {
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 12px;
+    border-top: 2px solid #dbeafe;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* BUTTONS */
+
+.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 22px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+}
+
+.print-btn {
+    background: #2563eb;
+}
+
+.clear-btn {
+    background: #64748b;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 22px 17px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .top-section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .detail-row {
+        font-size: 12px;
+    }
+
+    .detail-row strong {
+        width: 125px;
+    }
+
+    .photo-box {
+        width: 125px;
+        height: 150px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 11px;
+    }
+
+    .signature-section {
+        gap: 15px;
+        font-size: 12px;
+    }
+}
+
+/* PRINT SETTINGS */
+
+@media print {
+
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .container {
+        box-shadow: none;
+        border: none;
+        max-width: 100%;
+        padding: 15px 25px;
+        border-radius: 0;
+    }
+
+    .buttons,
+    .photo-upload {
+        display: none !important;
+    }
+
+    .photo-box {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    th, h3 {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    tr {
+        break-inside: avoid;
+    }
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- MAIN HEADING -->
+
+    <h1>✦ BIO DATA ✦</h1>
+
+
+    <!-- PERSONAL DETAILS AND PHOTO -->
+
+    <div class="top-section">
+
+        <div class="details">
+
+            <div class="detail-row">
+                <strong>👤 Name</strong>
+                <span>: Dwithi N Rai</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>👨 Father's Name</strong>
+                <span>: Nagesh Rai</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>🎂 Date of Birth</strong>
+                <span>: 28-02-2006</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>♀ Gender</strong>
+                <span>: Female</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>💍 Marital Status</strong>
+                <span>: Unmarried</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>🛕 Religion</strong>
+                <span>: Hindu</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>🌐 Languages Known</strong>
+                <span>: English, Kannada, Hindi, Tamil</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>🎨 Hobbies</strong>
+                <span>: Painting, Drawing, Music, New Technology</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>📱 Mobile Number</strong>
+                <span>: 7019596134</span>
+            </div>
+
+            <div class="detail-row">
+                <strong>✉ Email</strong>
+                <span>: dwithi910@gmail.com</span>
+            </div>
+
+        </div>
+
+
+        <!-- YOUR UPLOADED PHOTO -->
+
+        <div class="photo-container">
+
+            <div class="photo-box">
+
+                <img id="preview"
+                     src="myphoto.jpg.jpeg"
+                     alt="Dwithi N Rai Photo">
+
+            </div>
+
+            <p class="photo-caption">Passport Size Photograph</p>
+
+            <div class="photo-upload">
+
+                <input type="file"
+                       id="photoInput"
+                       accept="image/*">
+
+                <br>
+
+                <button type="button" onclick="restorePhoto()">
+                    Restore Original Photo
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- EDUCATIONAL QUALIFICATION -->
+
+    <h3>🎓 EDUCATIONAL QUALIFICATION</h3>
+
+    <table>
+
+        <tr>
+            <th>Qualification</th>
+            <th>Institution Name</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>SSLC</td>
+
+            <td>
+                Vivekananda English Medium School,
+                Tenkila, Puttur, Dakshina Kannada
+            </td>
+
+            <td>2024</td>
+        </tr>
+
+        <tr>
+            <td>PUC</td>
+
+            <td>Vivekananda PU College</td>
+
+            <td>2022–2024</td>
+        </tr>
+
+        <tr>
+            <td>B.E. (Computer Science)</td>
+
+            <td>
+                Vivekananda College of Engineering and Technology,
+                Puttur
+            </td>
+
+            <td>Present</td>
+        </tr>
+
+    </table>
+
+
+    <!-- EXPERIENCE -->
+
+    <h3>💼 EXPERIENCE</h3>
+
+    <p class="experience">
+        Fresher
+    </p>
+
+
+    <!-- PERMANENT ADDRESS -->
+
+    <h3>📍 PERMANENT ADDRESS</h3>
+
+    <p class="address">
+
+        Brahmari House, Tenkila Kattatharu Road,<br>
+
+        Next to Shrinidhi Building, Near Nexa Showroom,<br>
+
+        Tenkila, Puttur, Dakshina Kannada.
+
+    </p>
+
+
+    <!-- SIGNATURE -->
+
+    <div class="signature-section">
+
+        <div>
+
+            <p><strong>Place:</strong> Puttur</p>
+
+            <p><strong>Date:</strong> ______________</p>
+
+        </div>
+
+        <div class="signature">
+
+            <p>_____________________</p>
+
+            <p><strong>Signature</strong></p>
+
+            <p>Dwithi N Rai</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+        Bio Data | Dwithi N Rai
+
+    </div>
+
+
+    <!-- BUTTONS -->
+
+    <div class="buttons">
+
+        <button class="print-btn" onclick="printBioData()">
+
+            ⬇ Print / Save as PDF
+
+        </button>
+
+        <button class="clear-btn" onclick="restorePhoto()">
+
+            ↻ Restore Original Photo
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+// Original uploaded photo
+
+const originalPhoto = "myphoto.jpg.jpeg";
+
+const photoInput = document.getElementById("photoInput");
+
+const preview = document.getElementById("preview");
+
+
+// CHANGE PHOTO OPTION
+
+photoInput.addEventListener("change", function(event) {
+
+    const file = event.target.files[0];
+
+    if (file) {
+
+        if (!file.type.startsWith("image/")) {
+
+            alert("Please select a valid image file.");
+
+            photoInput.value = "";
+
+            return;
+
+        }
+
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+
+            preview.src = e.target.result;
+
+        };
+
+        reader.readAsDataURL(file);
+
+    }
+
+});
+
+
+// RESTORE ORIGINAL PHOTO
+
+function restorePhoto() {
+
+    photoInput.value = "";
+
+    preview.src = originalPhoto;
+
+}
+
+
+// PRINT / SAVE AS PDF
+
+function printBioData() {
+
+    window.print();
+
+}
+
+</script>
+
+</body>
+
+</html>

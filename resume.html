@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dwithi N Rai | Resume</title>
+
+<style>
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e9eef5;
+    color: #263238;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+.resume {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px 50px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+    border-radius: 8px;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.header-text {
+    flex: 1;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 31px;
+    letter-spacing: 2px;
+    color: #173b70;
+    margin-bottom: 5px;
+}
+
+header h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #2563eb;
+    margin-bottom: 14px;
+}
+
+/* PROFILE PHOTO */
+
+.profile-photo {
+    width: 125px;
+    height: 145px;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid #2563eb;
+    border-radius: 10px;
+    display: block;
+}
+
+/* CONTACT DETAILS */
+
+.contact {
+    font-size: 12px;
+    line-height: 2.2;
+    color: #444;
+    overflow-wrap: anywhere;
+}
+
+.contact div {
+    margin-bottom: 3px;
+}
+
+.contact-symbol {
+    display: inline-block;
+    width: 22px;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+
+section {
+    margin-bottom: 23px;
+}
+
+section h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #173b70;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 6px;
+    margin-bottom: 13px;
+    letter-spacing: 1px;
+}
+
+section p {
+    font-size: 13px;
+    text-align: justify;
+    color: #333;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 3px;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* LISTS */
+
+ul {
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+li {
+    margin-bottom: 5px;
+    padding-left: 3px;
+}
+
+/* TECHNICAL SKILLS */
+
+.skill-row {
+    display: flex;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.skill-title {
+    width: 160px;
+    font-weight: bold;
+    color: #173b70;
+    flex-shrink: 0;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    border-top: 2px solid #dbeafe;
+    padding-top: 12px;
+    margin-top: 25px;
+}
+
+/* BUTTONS */
+
+.buttons {
+    text-align: center;
+    margin: 25px auto;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #173b70;
+    transform: translateY(-2px);
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .resume {
+        padding: 25px 18px;
+    }
+
+    .header-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .profile-photo {
+        width: 110px;
+        height: 130px;
+    }
+
+    .skill-row {
+        flex-wrap: wrap;
+    }
+
+    .skill-title {
+        width: 140px;
+    }
+}
+
+/* PRINT SETTINGS */
+
+@media print {
+
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .resume {
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+        padding: 15px 25px;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+
+    .profile-photo {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="header-content">
+
+            <div class="header-text">
+
+                <h1>DWITHI N RAI</h1>
+
+                <h3>Computer Science & Engineering</h3>
+
+                <!-- CONTACT INFORMATION -->
+
+                <div class="contact">
+
+                    <div>
+                        <span class="contact-symbol">⌖</span>
+                        Puttur, Dakshina Kannada
+                    </div>
+
+                    <div>
+                        <span class="contact-symbol">☎</span>
+                        7019596134
+                    </div>
+
+                    <div>
+                        <span class="contact-symbol">✉</span>
+                        dwithi910@gmail.com
+                    </div>
+
+                    <div>
+                        <span class="contact-symbol">in</span>
+                        <a href="https://www.linkedin.com/in/dwithi-n-rai-a8551832a/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                           https://www.linkedin.com/in/dwithi-n-rai-a8551832a/
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PROFILE PHOTO -->
+
+            <img src="myphoto.jpg.jpeg"
+                 alt="Dwithi N Rai Profile Photo"
+                 class="profile-photo">
+
+        </div>
+
+    </header>
+
+
+    <!-- PROFESSIONAL SUMMARY -->
+
+    <section>
+
+        <h2>✦ Professional Summary</h2>
+
+        <p>
+            Motivated Computer Science Engineering graduate-in-progress
+            with foundational knowledge in programming, web development,
+            databases and software engineering. Familiar with HTML,
+            CSS, JavaScript, Python and SQL. Interested in backend
+            development and emerging technologies. Eager to learn
+            new technologies, improve technical skills and begin
+            a professional career in the IT industry.
+        </p>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
+    <section>
+
+        <h2>✦ Education</h2>
+
+        <div class="item">
+
+            <h3>Vivekananda College of Engineering and Technology, Puttur</h3>
+
+            <span class="date">2024 – Present</span>
+
+            <p>Bachelor of Engineering in Computer Science</p>
+
+        </div>
+
+        <div class="item">
+
+            <h3>Vivekananda PU College</h3>
+
+            <span class="date">2022 – 2024</span>
+
+            <p>Pre-University Course (PUC)</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+
+    <section>
+
+        <h2>✦ Experience</h2>
+
+        <div class="item">
+
+            <h3>Fresher</h3>
+
+            <p>
+                Currently seeking an entry-level opportunity to
+                apply academic knowledge, develop practical skills
+                and contribute to organizational growth.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section>
+
+        <h2>✦ Projects</h2>
+
+        <div class="item">
+
+            <h3>College Club and Activity Management System</h3>
+
+            <ul>
+
+                <li>Developing a web-based system to manage college clubs, student memberships and activities.</li>
+
+                <li>Designed features for event scheduling, club registration and student participation.</li>
+
+                <li>Using HTML, CSS, JavaScript and database technologies.</li>
+
+            </ul>
+
+        </div>
+
+        <div class="item">
+
+            <h3>Student Attendance Management System</h3>
+
+            <ul>
+
+                <li>Developed a web-based attendance management system.</li>
+
+                <li>Implemented attendance tracking, percentage calculation and report generation.</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+
+    <section>
+
+        <h2>✦ Technical Skills</h2>
+
+        <div class="skill-row">
+
+            <span class="skill-title">Programming :</span>
+
+            <span>C, C++, Python</span>
+
+        </div>
+
+        <div class="skill-row">
+
+            <span class="skill-title">Web Development :</span>
+
+            <span>HTML, CSS, JavaScript, Bootstrap 4</span>
+
+        </div>
+
+        <div class="skill-row">
+
+            <span class="skill-title">Database :</span>
+
+            <span>SQL</span>
+
+        </div>
+
+        <div class="skill-row">
+
+            <span class="skill-title">Tools :</span>
+
+            <span>VS Code, Git, Microsoft Excel</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+
+    <section>
+
+        <h2>✦ Certifications</h2>
+
+        <ul>
+
+            <li>Creating Responsive Web Pages using Bootstrap 4 – Infosys Springboard</li>
+
+            <li>Data Structures and Algorithms – Infosys Springboard</li>
+
+            <li>Linux for Beginners – Infosys Springboard</li>
+
+            <li>Generative AI Workshop – NxtWave</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+
+    <section>
+
+        <h2>✦ Achievements</h2>
+
+        <ul>
+
+            <li>Completed certifications through Infosys Springboard.</li>
+
+            <li>Developed academic projects using web development technologies.</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- INTERESTS AND LANGUAGES -->
+
+    <section>
+
+        <h2>✦ Interests & Languages</h2>
+
+        <p>
+            <b>Interests:</b>
+            Painting, Drawing, Music, New Technologies
+        </p>
+
+        <p>
+            <b>Languages:</b>
+            English, Kannada, Hindi, Tamil
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        Resume | Dwithi N Rai
+
+    </footer>
+
+</div>
+
+
+<!-- BUTTONS -->
+
+<div class="buttons">
+
+    <button onclick="printResume()">
+        ⬇ Print / Download Resume
+    </button>
+
+    <button onclick="resetPage()">
+        ↻ Reset Page
+    </button>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function printResume() {
+
+    window.print();
+
+}
+
+function resetPage() {
+
+    if (confirm("Do you want to refresh the resume page?")) {
+
+        window.location.reload();
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
